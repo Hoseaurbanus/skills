@@ -1,0 +1,13 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "plugin": [
+    "C:/Users/User1/.config/opencode/node_modules/superpowers"
+  ],
+  "skills": {
+    "paths": [
+      "C:/Users/User1/.config/opencode/skills",
+      ".agents/skills",
+      "~/.agents/skills"
+    ]
+  }
+}
