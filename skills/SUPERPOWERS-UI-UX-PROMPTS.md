@@ -896,11 +896,75 @@ Save this file to: `docs/superpowers/SUPERPOWERS-UI-UX-PROMPTS.md`
 ## Related Files
 
 - `skills/ui-ux-design-principles/SKILL.md` - UI/UX design principles reference
+- `skills/emil-design-eng/SKILL.md` - Emil Kowalski design engineering philosophy
+- `skills/review-animations/SKILL.md` - Animation code review
+- `skills/improve-animations/SKILL.md` - Animation audit and improvement plans
+- `skills/find-animation-opportunities/SKILL.md` - Animation opportunity discovery
+- `skills/animation-vocabulary/SKILL.md` - Motion terminology reference
+- `skills/apple-design/SKILL.md` - Apple design philosophy for web
+- `skills/pick-ui-library/SKILL.md` - Curated library recommendations
+- `skills/prototype/SKILL.md` - UI variant prototyping
 - `skills/*/SKILL.md` - Individual skill documentation
 - `docs/superpowers/plans/` - Implementation plans
 - `docs/audits/` - Audit reports
 
 ---
 
-**Last Updated:** 2026-07-19
-**Version:** 1.0.0
+## Emil Kowalski Design Engineering Integration
+
+Emil Kowalski's skills are layered on top of Superpowers for frontend-specific tasks. They activate ONLY for UI-related work and never override Superpowers engineering decisions.
+
+### When to Use Emil's Skills
+
+| Task | Superpowers Handles | Emil Handles |
+|------|---------------------|--------------|
+| Build a new feature | Planning, architecture, TDD | Component polish, spacing, typography |
+| Review code | Engineering quality, security | Animation craft, motion review |
+| Debug a bug | Root cause analysis | UX problem investigation |
+| Audit a codebase | Full 16-category audit | Animation-specific audit |
+| Design a UI component | Implementation approach | Visual hierarchy, micro-interactions |
+| Add animations | When to animate (framework) | How to animate (easing, duration, physics) |
+| Choose a library | Engineering fit | Design quality, DX |
+
+### Emil's Workflow Integration Points
+
+**After brainstorming (superpowers:brainstorming):**
+- Use `emil-design-eng` to refine UI decisions
+- Use `prototype` to explore variant directions
+
+**During implementation (superpowers:executing-plans):**
+- Use `pick-ui-library` to select frontend dependencies
+- Use `emil-design-eng` for component building principles
+
+**After implementation:**
+- Use `review-animations` for animation code review
+- Use `find-animation-opportunities` to discover polish moments
+- Use `improve-animations` for codebase-wide motion audits
+
+**During review (superpowers:requesting-code-review):**
+- Add `review-animations` as a secondary review for UI-heavy diffs
+
+### Priority Rules
+
+1. **Superpowers decides** the engineering approach, architecture, and workflow
+2. **Emil refines** the user experience, presentation, and motion
+3. **Never let Emil** change architecture, backend, logic, security, or engineering workflow
+4. **When both apply**, Superpowers takes precedence; Emil adds polish
+
+### Emil's Skill Invocation
+
+| Skill | Invocation | Auto-trigger? |
+|-------|-----------|---------------|
+| `emil-design-eng` | `superpowers:emil-design-eng` | Yes (for UI tasks) |
+| `review-animations` | `superpowers:review-animations` | No (explicit only) |
+| `improve-animations` | `superpowers:improve-animations` | Yes (for motion audits) |
+| `find-animation-opportunities` | `superpowers:find-animation-opportunities` | Yes (for UI polish) |
+| `animation-vocabulary` | `superpowers:animation-vocabulary` | Yes (for naming effects) |
+| `apple-design` | `superpowers:apple-design` | Yes (for gesture/spring UI) |
+| `pick-ui-library` | `superpowers:pick-ui-library` | No (explicit only) |
+| `prototype` | `superpowers:prototype` | No (explicit only) |
+
+---
+
+**Last Updated:** 2026-07-29
+**Version:** 2.0.0 (Emil Kowalski integration added)

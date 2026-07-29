@@ -207,3 +207,20 @@ This document is referenced by:
 - **subagent-driven-development** - UI/UX agent roles
 - **requesting-code-review** - UI review criteria
 - **verification-before-completion** - UI/UX verification
+
+## Emil Kowalski Design Engineering Skills
+
+For deep animation and motion work, use Emil Kowalski's specialized skills:
+
+| Skill | Purpose | When to Use |
+|-------|---------|-------------|
+| `emil-design-eng` | Core design engineering philosophy | Building UI components, reviewing UI code |
+| `review-animations` | Strict animation code review | After implementing animations |
+| `improve-animations` | Codebase-wide animation audit | When animations feel off across a project |
+| `find-animation-opportunities` | Discover animation moments | When UI feels static or jarring |
+| `animation-vocabulary` | Name motion effects | When you need the right term for an effect |
+| `apple-design` | Apple's design philosophy | Building gesture-driven, spring-based UI |
+| `pick-ui-library` | Curated library picks | Choosing frontend dependencies |
+| `prototype` | Build UI variant explorations | Exploring design directions |
+
+**Key distinction:** This document (`ui-ux-design-principles`) provides general UI/UX standards. Emil's skills provide specialized, craft-level guidance on animation, motion, and design engineering details. Use both together for comprehensive frontend quality.
